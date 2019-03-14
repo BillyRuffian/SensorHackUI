@@ -1,0 +1,22 @@
+<Crossing>:
+  orientation: "vertical"
+
+  BoxLayout:
+    orientation: "horizontal"
+    canvas.before: 
+    Label:
+      size: self.texture_size
+      text: root.wait_cross_label
+      font_size: "180dp"
+      font_name: 'FontAwesome5.otf' 
+      color: root.wait_cross_color
+
+  BoxLayout:
+    orientation: "horizontal"
+    Button:
+      id: cross_button
+      size: self.texture_size
+      text: "Press"
+      font_size: "80dp"
+      on_press: root.button_pressed()
+
